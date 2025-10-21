@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jessica Magana — Portfolio</title>
+  <style>
+    :root{--hunter:#355E3B;--hunter-dark:#254428;--hunter-light:#5C8A5B;--ink:#0f172a;--muted:#64748b;--bg:#ffffff}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:#0f172a}
+    a{color:var(--hunter-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border-radius:14px;border:1px solid transparent;font-weight:600}
+    .btn.primary{background:var(--hunter-dark);color:#fff}
+    .btn.primary:hover{background:var(--hunter)}
+    .btn.ghost{border-color:var(--hunter-dark);color:var(--hunter-dark);background:#fff}
+    .btn.ghost:hover{background:var(--hunter-light);color:#fff}
+    .chip{display:inline-block;padding:.3rem .6rem;border-radius:999px;background:rgba(53,94,59,.12);color:var(--hunter-dark);font-size:.8rem}
+    .card{border:1px solid rgba(92,138,91,.35);border-radius:16px;padding:20px;background:#fff}
+    .grid{display:grid;gap:16px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width: 860px){.grid-2,.grid-3{grid-template-columns:1fr}}
+    h1{font-size:clamp(28px,4vw,48px);line-height:1.1;margin:0}
+    h2{font-size:clamp(22px,3vw,32px);margin:0 0 8px}
+    h3{margin:0 0 6px;font-size:18px}
+    p.lead{font-size:18px;color:#1f2937;max-width:820px}
+    section{padding:56px 0}
+    .hero{position:relative;overflow:hidden}
+    .hero .bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--hunter-light),var(--hunter));opacity:.12}
+    .hero .inner{position:relative}
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="bg"></div>
+    <div class="container inner" style="padding:72px 0 40px">
+      <h1>Jessica Magana</h1>
+      <h2 style="margin-top:6px">Healthcare Product & Implementation Portfolio</h2>
+      <p class="lead" style="margin-top:10px">Translating population health strategy into scalable data platforms, analytics, and care management workflows.</p>
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px">
+        <span class="chip">Senior Product Manager</span>
+        <span class="chip">Analytics & Data Empowerment</span>
+        <span class="chip">Human-Centered Design</span>
+        <span class="chip">Execution & Delivery</span>
+        <span class="chip">Population Health</span>
+        <span class="chip">Value-Based Care</span>
+        <span class="chip">Interoperability</span>
+      </div>
+      <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn primary" href="#about">About</a>
+        <a class="btn primary" href="#portfolio">Portfolio</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/jessica-magana-dba-mshi-53451149" target="_blank">LinkedIn</a>
+        <a class="btn primary" href="https://drive.google.com/file/d/1o1e66561Y9ROxxMNjiH7Eh3Xk0fEVdN3/view?usp=drive_link" download>Download Resume </a>
+      </div>
+  </section>
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="container">
+      <h2 style="color:var(--hunter-dark)">About Me</h2>
+      <p class="lead" style="margin-top:8px">I'm a strategic and data-driven Product Manager with over 15 years in healthcare analytics and population health. My work focuses on connecting strategy to scalable execution, turning complex data ecosystems into actionable insights for leaders, clinicians, and analysts. I specialize in building analytics products that simplify the delivery of value-based care and drive measurable business outcomes.</p>
+      <p style="margin-top:8px">With experience leading cross-functional teams across data engineering, analytics, and clinical operations, I bridge the gap between technology and impact. I thrive at the intersection of design, storytelling, and analytics, ensuring that the right people get the right information at the right time. My portfolio reflects a passion for creating clarity, fostering adoption, and building solutions that endure.</p>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section>
+    <div class="container grid grid-2 grid-5" style="grid-template-columns:repeat(5,minmax(0,1fr));gap:16px">
+      <div class="card"><div style="font-size:32px;font-weight:700;color:var(--hunter-dark)">12+</div><div style="color:var(--muted)">Enterprise deployments</div></div>
+      <div class="card"><div style="font-size:32px;font-weight:700;color:var(--hunter-dark)">98%</div><div style="color:var(--muted)">Validated data accuracy pre-launch</div></div>
+      <div class="card"><div style="font-size:32px;font-weight:700;color:var(--hunter-dark)">100%</div><div style="color:var(--muted)">User certification rate</div></div>
+      <div class="card"><div style="font-size:32px;font-weight:700;color:var(--hunter-dark)">40%</div><div style="color:var(--muted)">Reduction in time-to-value</div></div>
+      <div class="card"><div style="font-size:32px;font-weight:700;color:var(--hunter-dark)">85%</div><div style="color:var(--muted)">Stakeholder adoption within 3 months post-launch</div></div>
+    </div>
+  </section>
+
+  <!-- BLUE CROSS NC PRODUCT PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 style="color:var(--hunter-dark)">Blue Cross NC Product Portfolio</h2>
+      <p class="lead" style="margin:8px 0 0">Enterprise-level analytics and platform solutions designed to advance population health, affordability, and self-service data accessibility.</p>
+      <div class="grid grid-2" style="margin-top:16px">
+
+        <!-- MemberPulse -->
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">MemberPulse Suite</h3>
+          <p><strong>Business Problem:</strong> Inability to categorize members into actionable segments for tailored care programs and outreach, leading to inefficiencies in care coordination and limited population insights.</p>
+          <p><strong>Solution:</strong> Advanced analytics suite enabling population health segmentation and cohort management for 3M members across Blue Cross NC.</p>
+          <ul>
+            <li><strong>Scope:</strong> Power BI dashboards for program performance, member health insights, and ROI tracking; Streamlit-based interface for creating dynamic cohorts with advanced filtering; AI-driven clustering for member personas, Snowflake data layers.</li>
+            <li><strong>Impact:</strong> Reduced analytics intake backlog by 70%, empowering 250+ users with real-time self-service capabilities, enabled targeted care campaigns, and reduced cost.</li>
+            <li><strong>Technical Stack:</strong> M360 data layer with Snowflake backend, UI/UX point-and-click interface for non-technical users, export & sharing functionality</li>
+            <li><strong>Innovation:</strong> Introduced proof-of-technology for Streamlit integration, enabling scalable data exploration, supported predictive modeling for rising risk and program ROI.</li>
+          </ul>
+        </div>
+
+        <!-- 6 Blocker -->
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">HC Executive Benchmarks (6-Blocker)</h3>
+          <p><strong>Business Problem:</strong> Executives lacked a unified lens across cost, utilization, and performance metrics, resulting in fragmented insights, delayed decisions, and missed affordability opportunities.</p>
+          <p><strong>Solution:</strong> Unified executive benchmarking dashboard providing leadership visibility into enterprise performance, utilization, and cost trends.</p>
+          <ul>
+            <li><strong>Scope:</strong> Six analytic blocks covering Top Condition Trends (unit cost and volume), Inpatient Trend Monitoring, Case/Disease Management Performance, UM mMtrics, Trend vs CoC Portfolio, and Executive Headlines & Focus Signals.</li>
+            <li><strong>Impact:</strong> Eliminated fragmented reporting and reduced decision latency through centralized Power BI views.</li>
+            <li><strong>Collaboration:</strong> Partnered with Affordability, Clinical, and Strategy leaders to define roadmap and success measures for aligning governance, analytics, and interventions and adoption.</li>
+            <li><strong>Outcome:</strong> Drove enterprise alignment on performance signals, reducing duplicative analytics efforts, and highlighted underperforming programs and redirected investments to high-impact initiatives.</li>
+          </ul>
+        </div>
+
+        <!-- COCI -->
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">Cost of Care Insights (COCI)</h3>
+          <p><strong>Business Problem:</strong> Fragmented cost and utilization data limited visibility into financial drivers, preventing proactive cost management and forecasting accuracy.</p>
+          <p><strong>Solution:</strong> Strategic analytics platform enabling proactive affordability management and root-cause cost driver analysis.</p>
+          <ul>
+            <li><strong>Scope:</strong> Integrated Cost Driver Lens (service lines, providers, and populations), Predictive & Root Cause Analytics (cost spikes and predictions on future utilization trends), Enterprise Affordability Impact Tracking (enterprise-level affordability measures and tracks savings against targets for transparency and accountablity) using data from claims, membership, provider, Milliman, ETG Data Mart.</li>
+            <li><strong>Impact:</strong> Identified multimillion-dollar savings through early visibility into cost-of-care trends, supporting enterprise goals and value-based contracts.</li>
+            <li><strong>Alignment:</strong> Embedded into enterprise affordability governance to guide proactive strategy.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP CLIENT IMPLEMENTATIONS -->
+  <section id="implementations">
+    <div class="container">
+      <h2 style="color:var(--hunter-dark)">Flagship Client Implementations</h2>
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">Emtiro Health · NC Medicaid PHP</h3>
+          <div style="color:var(--muted);font-size:14px">Product Implementation Lead · Jul 2019 – Jan 2020</div>
+          <ul style="margin-top:10px">
+            <li>Launched DAP, InCare, and InGraph to operationalize Medicaid care coordination.</li>
+            <li>Delivered 5 care protocols and 17 standardized assessments with automated tasking.</li>
+            <li>Established governance, UAT, and training; 100% user certification and 30‑day post‑go‑live optimization.</li>
+            <li>Outcome: ~40% faster task turnaround via workflow automation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">CHESS · Wake Forest Baptist Health</h3>
+          <div style="color:var(--muted);font-size:14px">Delivery & Governance Lead · Jul 2019 – Mar 2020</div>
+          <ul style="margin-top:10px">
+            <li>Four‑phase rollout of DAP, InGraph, InCare, and InNote across 250K+ members.</li>
+            <li>Integrated EMR & claims with ADT‑triggered alerts; established SLA cadence and change control.</li>
+            <li>Produced reusable population health blueprint adopted across programs.</li>
+            <li>Outcome: Executive reporting/QBRs standardized; proactive outreach workflows scaled.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INNOVACCER PRODUCT SUITE -->
+  <section id="innovaccer">
+    <div class="container">
+      <h2 style="color:var(--hunter-dark)">Innovaccer Product Suite</h2>
+      <p class="lead" style="margin:8px 0 0">Population health ecosystem delivering analytics, data, and care management capabilities across U.S. healthcare organizations.</p>
+      <table style="width:100%;margin-top:16px;border-collapse:collapse">
+        <thead>
+          <tr style="border-bottom:1px solid rgba(92,138,91,.35)">
+            <th style="text-align:left;padding:8px">Product / Project</th>
+            <th style="text-align:left;padding:8px">Role</th>
+            <th style="text-align:left;padding:8px">Impact / Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px">Data Activation Platform (DAP)</td><td style="padding:8px">Implementation & Governance Lead</td><td style="padding:8px">Unified EMR + claims; EMPI; 98% data quality pre-go-live</td></tr>
+          <tr><td style="padding:8px">InGraph Analytics</td><td style="padding:8px">Product Owner</td><td style="padding:8px">Quality, Risk-CDI, Utilization, Medication, SDoH dashboards; predictive overlays</td></tr>
+          <tr><td style="padding:8px">InCare (Care Management)</td><td style="padding:8px">Implementation Lead</td><td style="padding:8px">5+ care protocols; 17 assessments; task automation & productivity views</td></tr>
+          <tr><td style="padding:8px">InNote (Point-of-Care)</td><td style="padding:8px">Product Advisor</td><td style="padding:8px">Real-time care gaps & referrals; EMR-embedded prompts; ROI narratives</td></tr>
+          <tr><td style="padding:8px">Innovaccer Academy</td><td style="padding:8px">Enablement Partner</td><td style="padding:8px">Client learning paths; train-the-trainer programs; scaled adoption</td></tr>
+          <tr><td style="padding:8px">CHESS Health Enablement</td><td style="padding:8px">Delivery Lead</td><td style="padding:8px">250K+ members; governance & SLAs; ADT-triggered workflows</td></tr>
+          <tr><td style="padding:8px">Emtiro Health</td><td style="padding:8px">Product Lead</td><td style="padding:8px">Medicaid PHP rollout; automated care workflows; 30-day review</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section>
+    <div class="container">
+      <h2 style="color:var(--hunter-dark)">Technology Stack</h2>
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">Data & Storage</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+            <span class="chip">Snowflake</span>
+            <span class="chip">AWS</span>
+            <span class="chip">ETL/API</span>
+            <span class="chip">SQL</span>
+            <span class="chip">NLQ</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">Analytics & Apps</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+            <span class="chip">Power BI</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">Cohort Builder</span>
+             <span class="chip">Figma</span>
+             <span class="chip">Adobe XD</span>
+             <span class="chip">InVision</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--hunter-dark)">Healthcare & Governance</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+            <span class="chip">FHIR</span>
+            <span class="chip">HL7</span>
+            <span class="chip">CCDA</span>
+            <span class="chip">X12</span>
+            <span class="chip">EMPI</span>
+            <span class="chip">HIPAA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="border-top:1px solid rgba(92,138,91,.35);padding:24px 0">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+      <div>
+        <strong>Let’s build what people actually use.</strong><br/>
+        <span style="color:var
